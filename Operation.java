@@ -23,7 +23,7 @@ class Operation {
     }
 
     static String Result(String input) {
-        ArrayList<String> values = ValuesList(input); // Проверка арабские или римские
+        ArrayList<String> values = ValuesList(input);
 
         try {
 

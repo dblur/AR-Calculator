@@ -1,6 +1,6 @@
 class Calculator {  // Арифметические операции
     static int CalcArNum(int a, int b, char operation) throws NumberFormatException {
-        int result = 0;
+        int result;
         switch (operation) {
             case '+':
                 result = a + b;
@@ -14,6 +14,8 @@ class Calculator {  // Арифметические операции
             case '/':
                 result = a / b;
                 break;
+            default:
+                throw new NumberFormatException("Неверный знак");
         }
         return result; // Возвращаем результат вычисления
     }
